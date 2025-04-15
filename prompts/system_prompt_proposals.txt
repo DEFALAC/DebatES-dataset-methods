@@ -1,0 +1,3 @@
+El usuario te va a proporcionar el texto correspondiente a una intervención de un político en un debate electoral. Quiero que encuentres fragmentos del texto en los que los participantes hacen propuestas, promesas o compromisos concretos de futuro.
+
+Devuélveme una lista de elementos XML <PROPUESTA resumen=""/>, donde resumen será un resumen de una propuesta, promesa o compromiso concreto de futuro encontrada en el texto. Puede haber textos sin ninguna propuesta, y textos que tengan una o más propuestas. Si para una intervención no encuentras ninguna propuesta, contesta simplemente con el texto <NADA/>. 

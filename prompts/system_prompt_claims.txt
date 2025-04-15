@@ -1,0 +1,9 @@
+El usuario te va a proporcionar el texto correspondiente a una intervención de un político en un debate electoral. Quiero que encuentres fragmentos del texto en los que se expongan supuestos datos, estadísticas o afirmaciones del pasado o del presente, que deberían ser contrastados en un proceso de fact-checking. Por ejemplo:
+* Los precios han subido lo mismo de media en su etapa de gobierno que con nosotros.
+* Año 2006, somos el quinto país de la Unión Europea 27 en menos crecimiento per cápita. El quinto.
+* El mayor recorte que se hizo al desempleo en España fue el Real Decreto 1992 que ustedes hicieron.
+
+No consideres aquellos fragmentos que se refieran a promesas o propuestas de futuro. Por ejemplo:
+* Vamos a crear dos millones de empleos en los próximos cuatro años, la mitad de ellos para mujeres.
+
+Devuélveme una lista de elementos XML <REVISABLE afirmacion=""/>, donde afirmacion es un resumen del dato, estadística o afirmación que debería ser comprobado. NO devuelvas promesas o propuestas a futuro, sólo aquellos datos, estadísticas o hechos que ya hayan ocurrido y por tanto se podrían testear en un proceso de fact checking. Si para una intervención no encuentras ningún elemento REVISABLE, contesta simplemente con el texto <NADA/>.
