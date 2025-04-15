@@ -9,9 +9,6 @@ import pandas as pd
 
 # You need to have the Spanish model installed. You can do this with:
 # python -m spacy download es_dep_news_trf
-# Make sure to install the required libraries:
-# pip install spacy pandas
-# pip install spacy[transformers]
 
 NLP_SPACY = spacy.load("es_dep_news_trf")
 

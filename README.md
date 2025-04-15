@@ -10,3 +10,17 @@ The process for obtaining the final resource consists of the following steps:
 * Run `generate_html_reports.py` to obtain interactive reports in HTML format.  
 
 Manual annotations of fallacies were added to the final resource.
+
+## Dependencies
+
+You need Python 3.10 or higher, and installing the following dependencies:
+
+```bash
+pip install pandas spacy[transformers] tqdm google-generativeai python-dotenv
+```
+
+You also need to install the `es_dep_news_trf` model:
+
+```bash
+python -m spacy download es_dep_news_trf
+```
