@@ -24,7 +24,7 @@ def configure_api(model_name, system_prompt):
     genai.configure(api_key=API_KEY)
     return genai.GenerativeModel(model_name=model_name, system_instruction=system_prompt)
 
-def rate_limited_api_call(client, user_prompt, call_count, start_time, log_folder, max_calls=10, interval=69):
+def rate_limited_api_call(client, user_prompt, call_count, start_time, log_folder, max_calls=10, interval=60):
     """Handles API calls with rate limiting.
     Args:
         client: The generative AI client.
